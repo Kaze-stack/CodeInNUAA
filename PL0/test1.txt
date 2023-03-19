@@ -1,0 +1,30 @@
+program a;
+const num:=1;
+var x,y;
+procedure gcd(x,y);
+    var f,g;
+    begin
+        f:=x;
+        g:=y;
+        while f<>g do
+        begin
+            if f<g then g:=g-f;
+            if g<f then f:=f-g
+        end;
+        write(f)
+    end
+
+begin
+    if 2<>1 then
+        begin
+            x:=34; y:=36; call gcd(x,y);
+            write(x)
+        end
+    else
+        begin
+            begin
+                x:=num;
+                write(x)
+            end
+        end
+end
